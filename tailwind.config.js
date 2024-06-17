@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'train-one': ["Train One", "system-ui"],
+    },
   },
   plugins: [],
 }
