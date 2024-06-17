@@ -1,3 +1,5 @@
+import { Link, animateScroll as scroll } from 'react-scroll';
+
 function Header() {
     return(
         <header className="bg-orange-900 bg-[39%] bg-opacity-70 py-6 px-4 sm:px-6 lg:px-8">
