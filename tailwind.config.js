@@ -6,9 +6,13 @@ export default {
   ],
   theme: {
     extend: {},
-    fontFamily: {
-      'train-one': ["Train One", "system-ui"],
-    },
+    
+        fontFamily: {
+        'body': ['Inter', 'sans-serif'],
+        'heading': ["Train One", "system-ui"],
+        'body-semibold': ['Inter', 'font-semibold', 'sans-serif'],
+      },
+    
   },
   plugins: [],
 }

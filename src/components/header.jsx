@@ -5,12 +5,12 @@ function Header() {
         <header className="bg-orange-900 bg-[39%] bg-opacity-70 py-6 px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <div>
-            <Link to="/" className="text-2xl font-bold ml-8">
+            <Link to="/" className="text-2xl font-bold ml-8 font-inter font-semibold">
               Gerardo Tango
             </Link>
           </div>
           <div className="lg:flex space-x-4 hidden">
-            <Link to="/" className="hover:text-gray-400">
+            <Link to="/" className="hover:text-gray-400 font-inter font-semibold">
               Home
             </Link>
             <Link
@@ -19,7 +19,7 @@ function Header() {
               smooth={true}
               offset={-80}
               duration={500}
-              className="hover:text-gray-400"
+              className="hover:text-gray-400 font-inter font-semibold"
             >
               About
             </Link>
@@ -29,7 +29,7 @@ function Header() {
               smooth={true}
               offset={-80}
               duration={500}
-              className="hover:text-gray-400"
+              className="hover:text-gray-400 font-inter font-semibold"
             >
               Projects
             </Link>
@@ -39,13 +39,13 @@ function Header() {
               smooth={true}
               offset={-80}
               duration={500}
-              className="hover:text-gray-400"
+              className="hover:text-gray-400 font-inter font-semibold"
             >
               Contact
             </Link>
             </div>
       
-            <Link to="/#contact" className="hover:bg-white hover:border-white hover:text-black flex items-center border border-white pl-4 pr-4 rounded-full transition-colors duration-300">
+            <Link to="/#contact" className="hover:bg-white hover:border-white hover:text-black flex items-center border border-white pl-4 pr-4 rounded-full transition-colors duration-300 font-inter font-semibold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5 mr-2"
