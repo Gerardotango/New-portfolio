@@ -26,17 +26,15 @@ function About() {
       color: 'text-blue-400',
       image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
     },
-    
   ];
 
   return (
-    <section className='h-[50rem] bg-white'>
-      <div className='mt-20'>
+    <section className='h-[50rem] bg-white flex justify-center items-center'>
+      <div className='flex flex-col items-center gap-8 w-3/4'>
+        <div>
           <h2 className="text-3xl font-bold text-black font-inter font-semibold">About Me</h2>
         </div>
-      <div className='flex flex-row items-start justify-center h-full pb-96 gap-20'>
-        
-        <div className='flex flex-col gap-8'>
+        <div className='flex justify-between items-center w-full'>
           <div className='w-1/2'>
             <p className="text-black mb-8 font-inter font-semibold">
               Je suis un développeur web passionné, spécialisé dans les technologies
@@ -52,18 +50,17 @@ function About() {
             </p>
           </div>
         </div>
-        <div className='flex flex-col border border-black gap-4 border border-black'>
-          <div className='w-96  gap-6 border border-black'>
+        <div className='flex justify-between items-start w-full border border-black p-4'>
+          <div className='grid grid-cols-4 gap-4'>
             {technologies.map((tech, index) => (
-              <div key={index} className='flex flex-wrap w-20 h-20 bg-gray-200 rounded-full flex flex-col justify-center items-center hover:scale-110 transition-transform duration-300 border border-black'>
+              <div key={index} className='flex flex-col items-center justify-center bg-gray-200 rounded-full w-20 h-20 hover:scale-110 transition-transform duration-300 border border-black'>
                 <img src={tech.image} alt={tech.name} className='w-10 h-10 object-contain' />
                 <span className={`text-sm font-semibold ${tech.color}`}>{tech.name}</span>
               </div>
             ))}
           </div>
-          <div className='w-1/2  border border-black'>
-            
-            <div className='w-full flex flex-col gap-4 border border-black'>
+          <div className='w-1/2 border border-black p-4'>
+            <div className='w-full flex flex-col gap-4'>
               <div className='w-full bg-gray-200 rounded-full h-4'>
                 <div className='bg-blue-500 h-4 rounded-full w-9/12'></div>
               </div>
