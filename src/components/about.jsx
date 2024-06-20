@@ -26,68 +26,54 @@ function About() {
       color: 'text-blue-400',
       image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg'
     },
-    {
-      name: 'Angular',
-      icon: 'fab fa-angular',
-      color: 'text-red-500',
-      image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg'
-    },
-    {
-      name: 'Figma',
-      icon: 'fab fa-figma',
-      color: 'text-purple-500',
-      image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg'
-    },
-    {
-      name: 'Photoshop',
-      icon: 'fab fa-adobe',
-      color: 'text-red-500',
-      image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg'
-    },
-    {
-      name: 'Node.js',
-      icon: 'fab fa-node-js',
-      color: 'text-green-500',
-      image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg'
-    },
-    {
-      name: 'MySQL',
-      icon: 'fas fa-database',
-      color: 'text-blue-500',
-      image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg'
-    },
-    {
-      name: 'PostgreSQL',
-      icon: 'fas fa-database',
-      color: 'text-green-500',
-      image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg'
-    }
+    
   ];
 
   return (
     <section className='h-[50rem] bg-white'>
-      <div className='flex flex-row items-center justify-center h-full'>
-        <div className='w-1/2 pr-12'>
-          <h2 className="text-3xl font-bold mb-4 text-black">About Me</h2>
-          <p className="text-black mb-8">
-            Je suis un développeur web passionné, spécialisé dans les technologies
-            front-end telles que React.js et Tailwind CSS. J'aime créer des
-            applications web visuellement attrayantes et performantes.
-          </p>
-          <p className="text-black mb-8">
-            En plus de mon travail, j'aime explorer de nouveaux outils et
-            technologies, lire des articles sur le développement web et participer à
-            des projets open source.
-          </p>
+      <div className='mt-20'>
+          <h2 className="text-3xl font-bold text-black font-inter font-semibold">About Me</h2>
         </div>
-        <div className='w-1/2 flex justify-center items-center border border-black'>
-          <div className='flex flex-wrap justify-center items-center gap-6'>
+      <div className='flex flex-row items-start justify-center h-full pb-96 gap-20'>
+        
+        <div className='flex flex-col gap-8'>
+          <div className='w-1/2'>
+            <p className="text-black mb-8 font-inter font-semibold">
+              Je suis un développeur web passionné, spécialisé dans les technologies
+              front-end telles que React.js et Tailwind CSS. J'aime créer des
+              applications web visuellement attrayantes et performantes.
+            </p>
+          </div>
+          <div className='w-1/2'>
+            <p className="text-black mb-8 font-inter font-semibold">
+              En plus de mon travail, j'aime explorer de nouveaux outils et
+              technologies, lire des articles sur le développement web et participer à
+              des projets open source.
+            </p>
+          </div>
+        </div>
+        <div className='flex flex-col border border-black gap-4 border border-black'>
+          <div className='w-96  gap-6 border border-black'>
             {technologies.map((tech, index) => (
-              <div key={index} className='w-20 h-20 bg-gray-200 rounded-full flex flex-col justify-center items-center hover:scale-110 transition-transform duration-300'>
+              <div key={index} className='flex flex-wrap w-20 h-20 bg-gray-200 rounded-full flex flex-col justify-center items-center hover:scale-110 transition-transform duration-300 border border-black'>
                 <img src={tech.image} alt={tech.name} className='w-10 h-10 object-contain' />
                 <span className={`text-sm font-semibold ${tech.color}`}>{tech.name}</span>
               </div>
             ))}
+          </div>
+          <div className='w-1/2  border border-black'>
+            
+            <div className='w-full flex flex-col gap-4 border border-black'>
+              <div className='w-full bg-gray-200 rounded-full h-4'>
+                <div className='bg-blue-500 h-4 rounded-full w-9/12'></div>
+              </div>
+              <div className='w-full bg-gray-200 rounded-full h-4'>
+                <div className='bg-green-500 h-4 rounded-full w-8/12'></div>
+              </div>
+              <div className='w-full bg-gray-200 rounded-full h-4'>
+                <div className='bg-yellow-500 h-4 rounded-full w-7/12'></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

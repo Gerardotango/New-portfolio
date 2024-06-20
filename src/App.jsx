@@ -20,7 +20,7 @@ function App() {
     <div className="text-white">
     <Header/>
 
-      <main className="bg-orange-900">
+      <main className="">
 
         <div id="home">
           <Home />

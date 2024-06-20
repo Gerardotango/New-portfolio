@@ -18,7 +18,7 @@ function Home() {
   // }, [images.length]);
 
   return (
-    <div className="flex flex-row items-center h-[33rem]">
+    <div className="flex flex-row items-center h-[33rem] rounded-br-[25rem] bg-orange-900">
       <div className="flex flex-col justify-center ml-16 mr-8 mb-12">
         <h1 className="text-4xl mb-4 font-heading pt-24">Hello I AM</h1>
         <p className="text-4xl font-bold mb-8 font-inter font-semibold">
