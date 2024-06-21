@@ -18,10 +18,10 @@ function Home() {
   // }, [images.length]);
 
   return (
-    <div className="flex flex-row items-center h-[33rem] rounded-br-[25rem] bg-orange-900">
+    <div className="flex flex-row items-center h-[40rem] rounded-br-[25rem] bg-orange-900">
       <div className="flex flex-col justify-center ml-16 mr-8 mb-12">
         <h1 className="text-4xl mb-4 font-heading pt-24">Hello I AM</h1>
-        <p className="text-4xl font-bold mb-8 font-inter font-semibold">
+        <p className="text-4xl font-extrabold mb-8 font-inter ">
           Web Developper <br />
           Designer
         </p>
@@ -44,8 +44,8 @@ function Home() {
           </Link>
         </div>
       </div>
-      <div className="flex-1 h-full ml-96 mt-56">
-        <div className="rounded-full w-[22rem] h-[22rem] overflow-hidden">
+      <div className="flex-1 h-full ml-96 mt-96">
+        <div className="rounded-full w-[22rem] h-[22rem] overflow-hidden border border-white">
           {/* <img
             src={images[currentImageIndex]}
             alt="Profile"

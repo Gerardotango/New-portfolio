@@ -32,7 +32,7 @@ function About() {
     <section className='h-[50rem] bg-white flex justify-center items-center'>
       <div className='flex flex-col items-center gap-8 w-3/4'>
         <div>
-          <h2 className="text-3xl font-bold text-black font-inter font-semibold">About Me</h2>
+          <h2 className="text-3xl font-extrabold text-black font-inter">About Me</h2>
         </div>
         <div className='flex justify-between items-center w-full'>
           <div className='w-1/2'>

@@ -24,7 +24,7 @@ function Projects() {
 
   return (
     <section className='h-[82rem] md:h-[37rem] bg-orange-900'>
-      <h2 className="text-3xl font-bold mb-4 pt-12 ml-12 hover:scale-105 transition-transform duration-300 font-inter font-semibold">Projects</h2>
+      <h2 className="text-3xl font-extrabold mb-4 pt-12 ml-12 hover:scale-105 transition-transform duration-300 font-inter font-semibold">Projects</h2>
       <div className="ml-12 mr-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <div
@@ -37,7 +37,7 @@ function Projects() {
               <p className="text-white mb-4 hover:scale-105 transition-transform duration-300 font-inter font-semibold">{project.description}</p>
               <a
                 href={project.link}
-                className="bg-black hover:bg-blue-600 text-white py-2 px-4 rounded-full hover:scale-105 transition-transform duration-300 font-inter font-semibold"
+                className="bg-black hover:bg-white hover:text-black text-white py-2 px-4 rounded-full hover:scale-105 transition-transform duration-300 font-inter font-semibold"
               >
                see the project
               </a>
