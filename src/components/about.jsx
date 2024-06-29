@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
 import Personal_about from './Personal_about';
+import Experience_about from './Experience_about';
 
 function About() {
   return (
     <section className="bg-white h-auto py-24 flex justify-center gap-12  border border-black">
-      <div className="flex flex-col  border border-black h-96">
+      <div className="flex flex-col h-96">
         <div className="flex flex-col items-start">
           <h2 className="text-2xl font-bold mb-4 text-black">About</h2>
           <p className="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /> Sed ut risus in augue luctus venenatis.</p>
@@ -28,6 +29,7 @@ function About() {
       </div>
       <Routes>
         <Route path='/personal' element={<Personal_about/>} />
+        <Route path='/experience' element={<Experience_about/>} />
       </Routes>
     </section>
   );
