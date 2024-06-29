@@ -18,7 +18,7 @@ const Contact = () => {
     <section className="bg-white md:h-[40rem] flex justify-center items-center py-12 md:py-0">
       <div className="flex flex-col items-center">
         <div className="text-center mb-8">
-          <h2 className="text-3xl  font-inter font-extrabold text-black">Contact-me</h2>
+          <h2 className="text-3xl  font-inter font-extrabold text-black">Contact-Me</h2>
         </div>
         <div className="flex flex-row justify-center">
           <div className="flex flex-row justify-center">
@@ -72,13 +72,13 @@ const Contact = () => {
               <div className="text-white  font-inter font-semibold mb-4">Adresse</div>
               <div className="text-white  font-inter font-semibold mb-4">123 Rue de l'exemple, 75000 Paris</div>
               <div className="flex gap-4">
-                <a href="#" className="text-white hover:text-blue-600">
+                <a href="#" className="text-white hover:text-black">
                   <FaFacebookF />
                 </a>
-                <a href="#" className="text-white hover:text-blue-600">
+                <a href="#" className="text-white hover:text-black">
                   <FaLinkedinIn />
                 </a>
-                <a href="#" className="text-white hover:text-blue-600">
+                <a href="#" className="text-white hover:text-black">
                   <FaWhatsapp />
                 </a>
               </div>
