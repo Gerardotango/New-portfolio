@@ -3,7 +3,7 @@ function Personal_about() {
         <div className='flex flex-col h-96 gap-8 w-[35rem]'>
       <div>
         <h2 className="text-2xl font-bold mb-4 text-black">Personal Information</h2>
-        <p className="text-black">This section contains my personal details, including contact information and<br/> professional background.</p>
+        <p className="text-black font-inter font-semibold">This section contains my personal details, including contact information and<br/> professional background.</p>
       </div>
 
       <div className="flex flex-row  h-56 ">
