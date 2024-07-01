@@ -7,6 +7,7 @@ import Projects from './components/projets';
 import Contact from './components/contact';
 import Header from './components/header';
 import Footer from './components/footer';
+import Services from './components/services';
 
 
 import ('/src/index.css');
@@ -27,6 +28,9 @@ function App() {
         </div>
         <div id="about" className="">
           <About />
+        </div>
+        <div id="services" className="">
+          <Services/>
         </div>
         <div id="projects" className="">
           <Projects />
