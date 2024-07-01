@@ -7,25 +7,25 @@ function Education_about() {
       </div>
        
       <div className="grid  grid-cols-2 grid-rows-2 h-56 text-black  gap-4 mt-8">
-        <div className="border border-black p-4">
-        <h2>2023 - 2024</h2>
-          <h1>Certified Web Developer</h1>
-          <p>. Kadea Academy.</p>
+        <div className="border border-black p-4 rounded-md">
+        <h2 className="font-medium text-sm">2023 - 2024</h2>
+          <h1 className="text-lg font-bold">Certified Web Developer</h1>
+          <p className="font-medium text-sm">. Kadea Academy.</p>
         </div>
-        <div className="border border-black p-4">
-        <h2>2022</h2>
-          <h1>Front-end Track</h1>
-          <p>. OpenClassroom.</p>
+        <div className="border border-black p-4 rounded-md">
+        <h2 className="font-medium text-sm">2022</h2>
+          <h1 className="text-lg font-bold">Front-end Track</h1>
+          <p className="font-medium text-sm">. OpenClassroom.</p>
         </div>
-        <div className="border border-black p-4">
-        <h2>2017 - 2019</h2>
-          <h1>Graphic Design</h1>
-          <p>. Primo Pix Design.</p>
+        <div className="border border-black p-4 rounded-md">
+        <h2 className="font-medium text-sm">2017 - 2019</h2>
+          <h1 className="text-lg font-bold">Graphic Design</h1>
+          <p className="font-medium text-sm">. Primo Pix Design.</p>
         </div>
-        <div className="border border-black p-4">
-        <h2>2019 - 2022</h2>
-          <h1>Computer Science</h1>
-          <p>. William Booth University.</p>
+        <div className="border border-black p-4 rounded-md">
+        <h2 className="font-medium text-sm">2019 - 2022</h2>
+          <h1 className="text-lg font-bold">Computer Science</h1>
+          <p className="font-medium text-sm">. William Booth University.</p>
       </div>
       
         

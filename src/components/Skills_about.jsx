@@ -23,51 +23,51 @@ function Skills_about() {
                 <p className="text-black">This section contains my personal details, including contact information and<br /> professional background.</p>
             </div>
 
-            <div className="grid grid-cols-4 grid-rows-4 h-56 text-black  gap-4 mt-8">
-                <div className="border border-black pl-10 pt-[4px] flex-wrap">
-                <ImHtmlFive2 size={35}/>
+            <div className="grid grid-cols-4 grid-rows-4 h-56 text-black gap-4 mt-8">
+                <div className=" pl-10 pt-[4px] hover:bg-gray-100 transition-all duration-300 ease-in-out rounded-2xl bg-gray-300">
+                    <ImHtmlFive2 size={35} className="transition-transform duration-300 ease-in-out hover:scale-110" />
                 </div>
-                <div className="border border-black pl-10 pt-[4px]">
-                <TbBrandCss3  size={35}/>
+                <div className="pl-10 pt-[4px] hover:bg-gray-100 transition-all duration-300 ease-in-out rounded-2xl bg-gray-300">
+                    <TbBrandCss3 size={35} className="transition-transform duration-300 ease-in-out hover:scale-110" />
                 </div>
-                <div className="border border-black pl-10 pt-[4px]">
-                <IoLogoJavascript size={35}/>
+                <div className="pl-10 pt-[4px] hover:bg-gray-100 transition-all duration-300 ease-in-out rounded-2xl bg-gray-300">
+                    <IoLogoJavascript size={35} className="transition-transform duration-300 ease-in-out hover:scale-110" />
                 </div>
-                <div className="border border-black pl-10 pt-[4px]">
-                <FaReact size={35}/>
+                <div className="pl-10 pt-[4px] hover:bg-gray-100 transition-all duration-300 ease-in-out rounded-2xl bg-gray-300">
+                    <FaReact size={35} className="transition-transform duration-300 ease-in-out hover:scale-110" />
                 </div>
-                <div className="border border-black pl-10 pt-[4px]">
-                <SiAngular size={35}/>
+                <div className="pl-10 pt-[4px] hover:bg-gray-100 transition-all duration-300 ease-in-out rounded-2xl bg-gray-300">
+                    <SiAngular size={35} className="transition-transform duration-300 ease-in-out hover:scale-110" />
                 </div>
-                <div className="border border-black pl-10 pt-[4px]">
-                <FaNodeJs size={35}/>
+                <div className="pl-10 pt-[4px] hover:bg-gray-100 transition-all duration-300 ease-in-out rounded-2xl bg-gray-300">
+                    <FaNodeJs size={35} className="transition-transform duration-300 ease-in-out hover:scale-110" />
                 </div>
-                <div className="border border-black pl-10 pt-[4px]">
-                <SiExpress size={35}/>
+                <div className="pl-10 pt-[4px] hover:bg-gray-100 transition-all duration-300 ease-in-out rounded-2xl bg-gray-300">
+                    <SiExpress size={35} className="transition-transform duration-300 ease-in-out hover:scale-110" />
                 </div>
-                <div className="border border-black pl-10 pt-[4px]">
-                <SiAdobephotoshop size={35}/>
+                <div className="pl-10 pt-[4px] hover:bg-gray-100 transition-all duration-300 ease-in-out rounded-2xl bg-gray-300">
+                    <SiAdobephotoshop size={35} className="transition-transform duration-300 ease-in-out hover:scale-110" />
                 </div>
-                <div className="border border-black pl-10 pt-[4px]">
-                <SiCanva size={35}/>
+                <div className="pl-10 pt-[4px] hover:bg-gray-100 transition-all duration-300 ease-in-out rounded-2xl bg-gray-300">
+                    <SiCanva size={35} className="transition-transform duration-300 ease-in-out hover:scale-110" />
                 </div>
-                <div className="border border-black pl-10 pt-[4px]">
-                <SiMysql size={35}/>
+                <div className="pl-10 pt-[4px] hover:bg-gray-100 transition-all duration-300 ease-in-out rounded-2xl bg-gray-300">
+                    <SiMysql size={35} className="transition-transform duration-300 ease-in-out hover:scale-110" />
                 </div>
-                <div className="border border-black pl-10 pt-[4px]">
-                <BiLogoPostgresql size={35}/>
+                <div className="pl-10 pt-[4px] hover:bg-gray-100 transition-all duration-300 ease-in-out rounded-2xl bg-gray-300">
+                    <BiLogoPostgresql size={35} className="transition-transform duration-300 ease-in-out hover:scale-110" />
                 </div>
-                <div className="border border-black pl-10 pt-[4px]">
-                <SiMongodb size={35}/>
+                <div className="pl-10 pt-[4px] hover:bg-gray-100 transition-all duration-300 ease-in-out rounded-2xl bg-gray-300">
+                    <SiMongodb size={35} className="transition-transform duration-300 ease-in-out hover:scale-110" />
                 </div>
-                <div className="border border-black pl-10 pt-[4px]">
-                <FaGithub size={35}/>
+                <div className="pl-10 pt-[4px] hover:bg-gray-100 transition-all duration-300 ease-in-out rounded-2xl bg-gray-300">
+                    <FaGithub size={35} className="transition-transform duration-300 ease-in-out hover:scale-110" />
                 </div>
-                <div className="border border-black pl-10 pt-[4px]">
-                <FaWordpress size={35}/>
+                <div className="pl-10 pt-[4px] hover:bg-gray-100 transition-all duration-300 ease-in-out rounded-2xl bg-gray-300">
+                    <FaWordpress size={35} className="transition-transform duration-300 ease-in-out hover:scale-110" />
                 </div>
-                <div className="border border-black pl-10 pt-[4px]">
-                <SiAdobeillustrator size={35}/>
+                <div className="pl-10 pt-[4px] hover:bg-gray-100 transition-all duration-300 ease-in-out rounded-2xl bg-gray-300">
+                    <SiAdobeillustrator size={35} className="transition-transform duration-300 ease-in-out hover:scale-110" />
                 </div>
             </div>
         </div>
