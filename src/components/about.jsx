@@ -42,11 +42,11 @@ const About = () => {
           <h2 className="text-2xl font-bold text-gray-800">About</h2>
         </div>
         <div className="flex flex-col md:flex-row justify-center gap-12">
-          <div className="bg-orange-900 rounded-lg shadow-md overflow-hidden w-full md:w-1/2 lg:w-1/3 h-96">
+          <div className="bg-orange-900 rounded-lg shadow-md overflow-hidden w-full md:w-1/2 lg:w-1/3 h-96 pt-14">
             {options.map(option => (
               <div
                 key={option.name}
-                className={`cursor-pointer flex justify-center items-center h-1/4 ${
+                className={`cursor-pointer flex justify-center items-center h-10  ml-12 mr-12 mt-6 rounded-full ${
                   activeOption === option.name ? 'text-blue-500' : 'text-gray-800'
                 }`}
                 onClick={() => handleOptionClick(option.name)}

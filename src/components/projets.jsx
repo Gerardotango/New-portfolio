@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaGithub } from 'react-icons/fa';
 
 function MyProjects() {
   const projects = [
@@ -35,19 +36,22 @@ function MyProjects() {
           <h2 className="text-2xl font-bold text-gray-800">My Projects</h2>
         </div>
         <div className="flex flex-col sm:flex-row justify-center gap-12">
-          <div className="bg-orange-900 rounded-lg shadow-md overflow-hidden w-full max-w-2xl sm:w-1/2">
-            <div className="p-6">
-              <h1 className="text-xl font-bold text-white mb-2"> {projects[currentIndex].number}</h1>
-              <h1 className="text-xl font-bold text-white mt-12">{projects[currentIndex].title}</h1>
-            </div>
-            <div className='p-6'>
-            <p className="text-white mb-4">{projects[currentIndex].description}</p>
-            <p className="text-white mb-4">{projects[currentIndex].description}</p>
-            <div>
-              logo
-            </div>
-            </div>
-          </div>
+        <div className="bg-orange-900 rounded-lg shadow-md overflow-hidden w-full max-w-2xl sm:w-1/2">
+         <div className="p-6">
+    <h1 className="text-3xl  text-white mb-2 font-heading">{projects[currentIndex].number}</h1>
+    <h1 className="text-3xl font-bold text-white mt-12">{projects[currentIndex].title}</h1>
+  </div>
+  <div className="p-6 border border-b-white border-transparent ml-4 mr-4">
+    <p className="text-white mb-4">{projects[currentIndex].description}</p>
+    <p className="text-white mb-4 ">{projects[currentIndex].description}</p>
+    
+  </div>
+  <div className='p-6'>
+    <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-black">
+     <FaGithub size={25}/>
+    </a>
+    </div>
+</div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden w-full max-w-2xl sm:w-1/2">
             <img
               src={projects[currentIndex].image}

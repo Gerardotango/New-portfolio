@@ -16,12 +16,12 @@ const Contact = () => {
                 <div className="mb-4">
                   <label htmlFor="name" className="block text-white font-bold mb-2">Name</label>
                   <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    className="bg-orange-900  shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    placeholder="Enter your name"
-                  />
+                   type="text"
+                   id="name"
+                   name="name"
+                   className="bg-orange-900 text-white shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
+                   placeholder="Enter your name"
+                   />
                 </div>
                 <div className="mb-4">
                   <label htmlFor="email" className="block text-white font-bold mb-2">Email</label>
@@ -29,7 +29,7 @@ const Contact = () => {
                     type="email"
                     id="email"
                     name="email"
-                    className="bg-orange-900  shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="bg-orange-900 text-white shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                     placeholder="Enter your email"
                   />
                 </div>
@@ -38,7 +38,7 @@ const Contact = () => {
                   <textarea
                     id="message"
                     name="message"
-                    className="bg-orange-900  shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    className="bg-orange-900 text-white shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline"
                     rows="4"
                     placeholder="Enter your message"
                   ></textarea>

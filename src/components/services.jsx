@@ -4,7 +4,7 @@ function Services() {
   <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <h2 className="text-3xl font-bold text-gray-800 mb-8">My Services</h2>
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-      <div className="bg-white border border-b-black rounded-lg p-6">
+      <div className="bg-white border border-b-black border-transparent rounded-lg p-6">
         <div className="flex flex-col mb-4">
           <div className="bg-orange-800 text-white font-bold rounded-full h-8 w-8 flex items-center justify-center mr-4">
             1
@@ -16,7 +16,7 @@ function Services() {
           in augue luctus venenatis.
         </p>
       </div>
-      <div className="bg-white border border-b-black rounded-lg p-6">
+      <div className="bg-white border border-b-black border-transparent rounded-lg p-6">
         <div className="flex flex-col mb-4">
           <div className="bg-orange-800 text-white font-bold rounded-full h-8 w-8 flex items-center justify-center mr-4">
             2
@@ -28,7 +28,7 @@ function Services() {
           in augue luctus venenatis.
         </p>
       </div>
-      <div className="bg-white border border-b-black rounded-lg p-6">
+      <div className="bg-white border border-b-black border-transparent rounded-lg p-6">
         <div className="flex flex-col mb-4">
           <div className="bg-orange-800 text-white font-bold rounded-full h-8 w-8 flex items-center justify-center mr-4">
             3
@@ -40,7 +40,7 @@ function Services() {
           in augue luctus venenatis.
         </p>
       </div>
-      <div className="bg-white border border-b-black rounded-lg p-6">
+      <div className="bg-white border border-b-black border-transparent rounded-lg p-6">
         <div className="flex flex-col mb-4">
           <div className="bg-orange-800 text-white font-bold rounded-full h-8 w-8 flex items-center justify-center mr-4">
             4
