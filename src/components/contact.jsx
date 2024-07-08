@@ -61,7 +61,7 @@ const Contact = () => {
               </div>
               <div className="mb-4">
                 <p className="text-white font-bold mb-2"><FaEnvelope className="inline-block mr-2" /> Email:</p>
-                <p className="text-white">info@example.com</p>
+                <p className="text-white">tangogerard890@gmail.com</p>
               </div>
               <div className="mb-4">
                 <p className="text-white font-bold mb-2"><FaMapMarkerAlt className="inline-block mr-2" /> Address:</p>

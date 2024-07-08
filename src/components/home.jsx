@@ -10,7 +10,7 @@ function Home() {
         <h1 className="text-3xl md:text-4xl mb-4 font-heading pt-12 md:pt-24">Hello I AM</h1>
         <p className="text-3xl md:text-4xl font-extrabold mb-8 font-inter">
           Web Developper <br />
-          Designer
+          Designer 
         </p>
         <p className="text-white font-inter text-base md:text-lg">
           Découvrez mes derniers projets <br/>et en savoir

@@ -63,7 +63,8 @@ function Header() {
           >
             Contact
           </Link>
-        
+          </div>
+          <div className='lg:flex space-x-4 hidden'>
         <Link
           to="/#contact"
           className="hover:bg-white hover:border-white hover:text-black flex items-center border border-white pl-4 pr-4 rounded-full transition-colors duration-300 font-inter font-semibold"
