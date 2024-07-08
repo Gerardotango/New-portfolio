@@ -1,56 +1,67 @@
-import React from 'react';
-import { Link, Route, Routes } from 'react-router-dom';
-import Personal_about from './Personal_about';
-import Experience_about from './Experience_about';
+import { useState } from 'react';
+import PersonalAbout from './Personal_about';
+import ExperienceAbout from './Experience_about';
 import Education_about from './Education_about';
 import Skills_about from './Skills_about';
 
+const About = () => {
+  const [activeOption, setActiveOption] = useState('Personal');
 
-function About() {
+  const options = [
+    {
+      name: 'Personal',
+      description: <PersonalAbout />
+    },
+    {
+      name: 'Experience',
+      description: <ExperienceAbout />
+    },
+    {
+      name: 'Education',
+      description: <Education_about />
+    },
+    {
+      name: 'Skills',
+      description: <Skills_about />
+    }
+  ];
+
+  const handleOptionClick = (option) => {
+    setActiveOption(option);
+  };
+
+  const getOptionDescription = () => {
+    const selectedOption = options.find(opt => opt.name === activeOption);
+    return selectedOption ? selectedOption.description : '';
+  };
+
   return (
-    <section className="bg-white py-24 flex justify-center gap-12">
-      <div className="flex flex-col h-auto">
-        <div className="flex flex-col items-start">
-          <h2 className="text-2xl font-bold mb-4 text-black">About</h2>
-          <p className="text-black font-inter font-semibold">
-            Get to know me better through these sections.
-          </p>
+    <section className="bg-gray-100 py-12">
+      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mb-8">
+          <h2 className="text-2xl font-bold text-gray-800">About</h2>
         </div>
-        <div className="flex flex-col gap-4 mt-8">
-          <Link
-            to="/personal"
-            className="text-blue-500 hover:text-blue-700 border border-black py-2 px-4 rounded-md"
-          >
-            Personal
-          </Link>
-          <Link
-            to="/experience"
-            className="text-blue-500 hover:text-blue-700 border border-black py-2 px-4 rounded-md"
-          >
-            Experience
-          </Link>
-          <Link
-            to="/skills"
-            className="text-blue-500 hover:text-blue-700 border border-black py-2 px-4 rounded-md"
-          >
-            Skills
-          </Link>
-          <Link
-            to="/education"
-            className="text-blue-500 hover:text-blue-700 border border-black py-2 px-4 rounded-md"
-          >
-            Education
-          </Link>
+        <div className="flex flex-col md:flex-row justify-center gap-12">
+          <div className="bg-orange-900 rounded-lg shadow-md overflow-hidden w-full md:w-1/2 lg:w-1/3 h-96">
+            {options.map(option => (
+              <div
+                key={option.name}
+                className={`cursor-pointer flex justify-center items-center h-1/4 ${
+                  activeOption === option.name ? 'text-blue-500' : 'text-gray-800'
+                }`}
+                onClick={() => handleOptionClick(option.name)}
+              >
+                <h3 className="text-lg font-bold text-white">{option.name}</h3>
+              </div>
+            ))}
+          </div>
+          <div className="bg-orange-900 rounded-lg shadow-md overflow-hidden w-full md:w-1/2 lg:w-2/3 h-96">
+            <p className="text-white p-4">{getOptionDescription()}</p>
+          </div>
         </div>
       </div>
-      <Routes>
-        <Route path="/personal" element={<Personal_about/>} />
-        <Route path="/experience" element={<Experience_about />} />
-        <Route path="/education" element={<Education_about />} />
-        <Route path="/skills" element={<Skills_about />} />
-      </Routes>
     </section>
   );
-}
+};
 
 export default About;
