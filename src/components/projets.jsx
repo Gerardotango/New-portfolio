@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
+import { motion } from "framer-motion";
 
 function MyProjects() {
   const projects = [
@@ -35,6 +36,13 @@ function MyProjects() {
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-2xl font-bold text-gray-800">My Projects</h2>
         </div>
+        <motion.div
+            initial={{ opacity: 0, translateY: 50 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="bg-white border-transparent rounded-lg p-6"
+          >
         <div className="flex flex-col sm:flex-row justify-center gap-12">
         <div className="bg-orange-900 rounded-lg shadow-md overflow-hidden w-full max-w-2xl sm:w-1/2">
          <div className="p-6">
@@ -78,6 +86,7 @@ function MyProjects() {
             </div>
           </div>
         </div>
+        </motion.div>
       </div>
     </section>
   );

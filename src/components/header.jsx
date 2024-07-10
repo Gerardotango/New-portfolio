@@ -19,7 +19,7 @@ function Header() {
 
   return (
     <header
-      className={`bg-[#612503] bg-[39%] py-6 px-4 sm:px-6 lg:px-8 shadow-md shadow-[rgba(0,0,0,0.5)] fixed top-0 w-full transition-all duration-300 z-50 ${
+      className={`bg-orange-900 py-6 px-4 sm:px-6 lg:px-8  fixed top-0 w-full transition-all duration-300 z-50 ${
         isSticky ? 'shadow-lg shadow-[rgba(0,0,0,0.5)]' : ''
       }`}
     >

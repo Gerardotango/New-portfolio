@@ -3,6 +3,7 @@ import PersonalAbout from './Personal_about';
 import ExperienceAbout from './Experience_about';
 import Education_about from './Education_about';
 import Skills_about from './Skills_about';
+import { motion } from "framer-motion";
 
 const About = () => {
   const [activeOption, setActiveOption] = useState('Personal');
@@ -37,6 +38,13 @@ const About = () => {
 
   return (
     <section className="bg-gray-100 py-12">
+      <motion.div
+            initial={{ opacity: 0, translateY: 50 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="bg-white border-transparent rounded-lg p-6"
+          >
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800">About</h2>
@@ -60,6 +68,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      </motion.div>
     </section>
   );
 };

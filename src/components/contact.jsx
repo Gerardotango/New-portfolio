@@ -1,15 +1,30 @@
 import React from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
     <section className="bg-white py-12">
+      <motion.div
+            initial={{ opacity: 0, translateY: 50 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="bg-white border-transparent rounded-lg p-6"
+          >
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between mb-8">
           <h2 className="text-2xl font-bold text-gray-800">Contact Us</h2>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
           <div className="bg-white rounded-lg shadow-md overflow-hidden w-full max-w-md md:max-w-xl">
+          <motion.div
+            initial={{ opacity: 0, translateY: 50 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="bg-white border-transparent rounded-lg p-6"
+          >
             <div className="p-6 bg-orange-900">
               <h3 className="text-xl font-bold text-white mb-4">Get in Touch</h3>
               <form className=''>
@@ -51,7 +66,15 @@ const Contact = () => {
                 </button>
               </form>
             </div>
+            </motion.div>
           </div>
+          <motion.div
+            initial={{ opacity: 0, translateY: 50 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="bg-white border-transparent rounded-lg p-6"
+          >
           <div className="mb-[9rem] bg-white rounded-lg shadow-md overflow-hidden w-full max-w-md md:max-w-xl">
             <div className="p-6 bg-orange-900">
               <h3 className="text-xl font-bold text-white mb-4">Contact Information</h3>
@@ -69,8 +92,10 @@ const Contact = () => {
               </div>
             </div>
           </div>
+          </motion.div>
         </div>
       </div>
+      </motion.div>
     </section>
   );
 };
