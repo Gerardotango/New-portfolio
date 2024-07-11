@@ -50,20 +50,30 @@ const About = () => {
           <h2 className="text-2xl font-bold text-gray-800">About</h2>
         </div>
         <div className="flex flex-col md:flex-row justify-center gap-12">
+        
           <div className="bg-orange-900 rounded-lg shadow-md overflow-hidden w-full md:w-1/2 lg:w-1/3 h-96 pt-14">
             {options.map(option => (
+              <motion.div
+              initial={{ opacity: 0, translateY: 50 }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
+              className=""
+            >
               <div
                 key={option.name}
                 className={`cursor-pointer flex justify-center items-center h-10  ml-12 mr-12 mt-6 rounded-full ${
-                  activeOption === option.name ? 'text-blue-500' : 'text-gray-800'
+                  activeOption === option.name ? 'text-white' : 'text-gray-400'
                 }`}
                 onClick={() => handleOptionClick(option.name)}
               >
-                <h3 className="text-lg font-bold text-white">{option.name}</h3>
+                <h3 className="text-lg font-bold">{option.name}</h3>
               </div>
+              </motion.div>
             ))}
           </div>
-          <div className="bg-orange-900 rounded-lg shadow-md overflow-hidden w-full md:w-1/2 lg:w-2/3 h-96">
+          
+          <div className="bg-orange-900 rounded-lg shadow-md overflow-hidden w-full md:w-1/2 lg:w-2/3 h-96 max-h-[calc(100vh-6rem)] overflow-y-auto pr-5 md:overflow-hidden">
             <p className="text-white p-4">{getOptionDescription()}</p>
           </div>
         </div>

@@ -9,7 +9,7 @@ function MyProjects() {
       number: 1,
       title: 'Fullstack',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut risus in augue luctus venenatis.',
-      image: 'https://via.placeholder.com/500x300'
+      image: './src/assets/Projet1.png'
     },
     {
       id: 2,
@@ -45,6 +45,13 @@ function MyProjects() {
           >
         <div className="flex flex-col sm:flex-row justify-center gap-12">
         <div className="bg-orange-900 rounded-lg shadow-md overflow-hidden w-full max-w-2xl sm:w-1/2">
+        <motion.div
+            initial={{ opacity: 0, translateY: 50 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className=""
+          >
          <div className="p-6">
     <h1 className="text-3xl  text-white mb-2 font-heading">{projects[currentIndex].number}</h1>
     <h1 className="text-3xl font-bold text-white mt-12">{projects[currentIndex].title}</h1>
@@ -59,6 +66,7 @@ function MyProjects() {
      <FaGithub size={25}/>
     </a>
     </div>
+    </motion.div>
 </div>
           <div className="bg-white rounded-lg shadow-md overflow-hidden w-full max-w-2xl sm:w-1/2">
             <img

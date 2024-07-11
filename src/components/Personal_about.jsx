@@ -1,5 +1,13 @@
+import { motion } from "framer-motion";
 function PersonalAbout() {
   return (
+    <motion.div
+            initial={{ opacity: 0, translateY: 50 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className=""
+          >
     <div className="flex flex-col h-96 gap-8 w-[35rem]">
       <div>
         <h2 className="text-2xl font-bold mb-4 text-white">Personal Information</h2>
@@ -34,6 +42,7 @@ function PersonalAbout() {
         </div>
       </div>
     </div>
+    </motion.div>
   );
 }
 
