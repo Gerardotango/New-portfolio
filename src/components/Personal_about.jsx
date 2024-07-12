@@ -17,7 +17,7 @@ function PersonalAbout() {
         </p>
       </div>
 
-      <div className="flex flex-col h-56">
+      <div className="flex flex-row h-56">
         <div className="flex-1">
           <p className="text-white">
             <strong>Name:</strong> Gerardo Tango
