@@ -14,7 +14,7 @@ const Contact = () => {
           >
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between mb-8">
-          <h2 className="text-2xl font-bold text-gray-800">Contact Us</h2>
+          <h2 className="text-2xl font-bold text-gray-800">Contact</h2>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
           <div className="bg-white rounded-lg shadow-md overflow-hidden w-full max-w-md md:max-w-xl">
@@ -88,7 +88,7 @@ const Contact = () => {
               </div>
               <div className="mb-4">
                 <p className="text-white font-bold mb-2"><FaMapMarkerAlt className="inline-block mr-2" /> Address:</p>
-                <p className="text-white">123 Main Street, Anytown USA</p>
+                <p className="text-white">17 ubangi salongo lemba, kinshasa DRC</p>
               </div>
             </div>
           </div>

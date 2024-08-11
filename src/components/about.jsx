@@ -63,7 +63,7 @@ const About = () => {
               <div
                 key={option.name}
                 className={`cursor-pointer flex justify-center items-center h-10  ml-12 mr-12 mt-6 rounded-full ${
-                  activeOption === option.name ? 'text-white' : 'text-gray-400'
+                  activeOption === option.name ? 'text-white' : 'text-black'
                 }`}
                 onClick={() => handleOptionClick(option.name)}
               >

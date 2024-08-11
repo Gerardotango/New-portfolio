@@ -8,16 +8,16 @@ function PersonalAbout() {
             viewport={{ once: true }}
             className=""
           >
-    <div className="flex flex-col h-96 gap-8 w-[35rem]">
-      <div>
+    <div className="md:flex flex-col md:h-96 md:gap-4 md:ml-16 md:mt-16 md:mw-[35rem] ml-2 flex flex-col gap-10">
+      <div className="flex flex-col gap-4">
         <h2 className="text-2xl font-bold mb-4 text-white">Personal Information</h2>
-        <p className="text-white font-inter font-semibold">
+        <p className="text-gray font-inter font-semibold">
           This section contains my personal details, including contact information
           and professional background.
         </p>
       </div>
 
-      <div className="flex flex-row h-56">
+      <div className="md:h-56 h-56 md:flex md:flex-row flex flex-col md:mt-8">
         <div className="flex-1">
           <p className="text-white">
             <strong>Name:</strong> Gerardo Tango

@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/assets/BG.jpg')",
+        'footer-texture': "url('/img/footer-texture.png')",
+       }
+    },
     
         fontFamily: {
         'body': ['Inter', 'sans-serif'],

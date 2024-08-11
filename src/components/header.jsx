@@ -19,20 +19,16 @@ function Header() {
 
   return (
     <header
-      className={`bg-orange-900 py-6 px-4 sm:px-6 lg:px-8  fixed top-0 w-full transition-all duration-300 z-50 ${
+      className={`bg-orange-800 py-6 px-4 sm:px-6 lg:px-8  fixed top-0 w-full transition-all duration-300 z-50 ${
         isSticky ? 'shadow-lg shadow-[rgba(0,0,0,0.5)]' : ''
       }`}
     >
       <div className="flex items-center justify-between">
         <div>
-          <Link to="/" className="text-2xl font-bold ml-8 font-inter font-semibold">
-            Gerardo Tango
-          </Link>
+          <a href="/" className="text-2xl font-inter font-semibold pl-4 text-white hover:text-gray-300">Gerardo Tango</a>
         </div>
         <div className="lg:flex space-x-4 hidden">
-          <Link to="/" className="hover:text-gray-400 font-inter font-semibold">
-            Home
-          </Link>
+        <a href="/" className="font-inter font-semibold pl-4 text-white hover:text-gray-400">Home</a>
           <Link
             to="about"
             spy={true}
@@ -42,6 +38,16 @@ function Header() {
             className="hover:text-gray-400 font-inter font-semibold"
           >
             About
+          </Link>
+          <Link
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+            className="hover:text-gray-400 font-inter font-semibold"
+          >
+            Services
           </Link>
           <Link
             to="projects"
@@ -95,9 +101,9 @@ function Header() {
       </div>
       {/* Menu Rideau pour les petits et moyens écrans */}
       {isMenuOpen && (
-        <div className="fixed top-0 left-0 w-full h-screen bg-[#612503] z-50 flex flex-col items-center justify-center">
+        <div className="fixed top-0 left-32 w-full pr-32 pb-28 h-[50rem] bg-[#612503] z-50 flex flex-col items-center justify-center">
           <button
-            className="absolute top-4 right-4 text-3xl text-white"
+            className="absolute top-4 right-4 text-3xl text-white pr-32"
             onClick={() => setIsMenuOpen(false)}
           >
             &times;

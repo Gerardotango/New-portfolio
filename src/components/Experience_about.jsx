@@ -16,7 +16,7 @@ function ExperienceAbout() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-white md:mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-white md:mb-16 md:ml-6">
         <div className="border border-white p-4 rounded-md hover:bg-white hover:text-gray-900 transition-colors duration-300">
           <h3 className="font-medium text-sm">2023 - Present</h3>
           <h2 className="text-lg font-bold">Full Stack Developer</h2>

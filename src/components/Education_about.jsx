@@ -12,12 +12,11 @@ function Education_about() {
       <div>
         <h2 className="text-2xl font-bold mb-4 text-white">Education</h2>
         <p className="text-white font-inter font-semibold">
-          This section contains my personal details, including contact information
-          and professional background.
+          This section contains my personal details, including contact information.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-4 sm:grid-rows-2 h-auto sm:h-56 text-black gap-4 mt-8 text-white md:mb-16">
+      <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-4 sm:grid-rows-2 h-auto sm:h-56 text-black gap-4 mt-8 text-white md:mb-16 md:ml-6">
         <div className="border border-white p-4 rounded-md hover:bg-white hover:text-gray-900 transition-colors duration-300">
           <h2 className="font-medium text-sm">2023 - 2024</h2>
           <h1 className="text-lg font-bold">Certified Web Developer</h1>

@@ -13,12 +13,12 @@ function Home() {
             viewport={{ once: true }}
             className=""
           >
-    <div className="flex flex-col-reverse md:flex-row items-center h-auto md:h-[40rem] rounded-br-[25rem] bg-orange-900">
+    <div className="flex flex-col-reverse md:flex-row items-center h-auto md:h-[40rem] md:bg-center md:bg-cover md:bg-[url('/src/assets/bgr-dev.jpg')] bg-[url('/src/assets/responsive_bg6.jpg')] bg-cover bg-center">
       <div className="flex flex-col justify-center ml-4 md:ml-16 mr-4 md:mr-8 mb-12 md:mb-0">
         <h1 className="text-3xl md:text-4xl mb-4 font-heading pt-12 md:pt-24">Hello I AM</h1>
         <p className="text-3xl md:text-4xl font-extrabold mb-8 font-inter">
           Web Developper <br />
-          Designer
+          & Designer
         </p>
         <p className="text-white font-inter text-base md:text-lg">
           Découvrez mes derniers projets <br/>et en savoir
@@ -27,36 +27,36 @@ function Home() {
         <div className="flex flex-col md:flex-row gap-4 mt-8">
           <Link
             to="/projects"
-            className="hover:bg-white hover:border-white hover:text-black flex items-center border border-black bg-black pl-4 pr-4 h-10 rounded-full transition-colors duration-300 font-inter font-semibold w-36 md:w-auto"
+            className="hover:bg-white hover:border-white hover:text-black flex items-center border border-transparent bg-black pl-4 pr-4 h-10 rounded-full transition-colors duration-300 font-inter font-semibold w-36 md:w-auto"
           >
             Contact Me
           </Link>
           <div className="flex flex-row gap-4">
-            <div className="h-10 border border-black w-10 rounded-full flex items-center justify-center bg-black hover:bg-white hover:text-black transition-colors duration-300">
-              <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer" className="text-white hover:text-black">
+            <div className="h-10 w-10 rounded-full flex items-center justify-center bg-black hover:bg-white hover:text-black transition-colors duration-300">
+              <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer">
                 <FaFacebookF />
               </a>
             </div>
-            <div className="h-10 border border-black w-10 rounded-full flex items-center justify-center bg-black hover:bg-white hover:text-black transition-colors duration-300">
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-black">
+            <div className="h-10 w-10 rounded-full flex items-center justify-center bg-black hover:bg-white hover:text-black transition-colors duration-300">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                 <FaLinkedinIn />
               </a>
             </div>
-            <div className="h-10 border border-black w-10 rounded-full flex items-center justify-center bg-black hover:bg-white hover:text-black transition-colors duration-300">
-              <a href="https://github.com/Gerardotango/New-portfolio" target="_blank" rel="noopener noreferrer" className="text-white hover:text-black">
+            <div className="h-10 w-10 rounded-full flex items-center justify-center bg-black hover:bg-white hover:text-black transition-colors duration-300">
+              <a href="https://github.com/Gerardotango/New-portfolio" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
             </div>
-            <div className="h-10 border border-black w-10 rounded-full flex items-center justify-center bg-black hover:bg-white hover:text-black transition-colors duration-300">
-              <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-black">
+            <div className="h-10 w-10 rounded-full flex items-center justify-center bg-black hover:bg-white hover:text-black transition-colors duration-300">
+              <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp />
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex-1 h-full ml-0 pt-24 md:ml-96 mt-8 md:mt-96">
-        <div className="rounded-full w-[10rem] md:w-[22rem] h-[10rem] md:h-[22rem] overflow-hidden border border-white">
+      <div className="flex-1 h-full ml-0 pt-24 md:ml-96 mt-8 md:mt-96 md:pt-2">
+        <div className="rounded-full w-[10rem] md:w-[22rem] h-[10rem] md:h-[22rem] overflow-hidden">
           <Profil />
         </div>
       </div>
