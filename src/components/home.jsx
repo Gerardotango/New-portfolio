@@ -14,7 +14,7 @@ function Home() {
             viewport={{ once: true }}
             className=""
           >
-    <div className="flex flex-col-reverse md:flex-row items-center h-auto md:h-[40rem] md:bg-center md:bg-cover md:bg-[url('/src/assets/bgr-dev.jpg')] bg-[url('/src/assets/responsive_bg8.jpg')] bg-cover bg-center">
+    <div className="flex flex-col-reverse md:flex-row items-center h-auto md:h-[40rem] md:bg-center md:bg-cover md:bg-[url('/src/assets/bgr-dev.jpg')] bg-[url('/src/assets/responsive_bg9.jpg')] bg-cover bg-center rounded-br-[20rem] ">
       <div className="flex flex-col justify-center ml-4 md:ml-16 mr-4 md:mr-8 mb-12 md:mb-0">
         <h1 className="text-3xl md:text-4xl mb-4 font-heading pt-12 md:pt-24">Hello I AM</h1>
         <p className="text-3xl md:text-4xl font-extrabold mb-8 font-inter">
