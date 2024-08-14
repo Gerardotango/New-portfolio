@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import Profil from './profil';
 import { FaFacebookF, FaLinkedinIn, FaGithub, FaWhatsapp } from 'react-icons/fa';
 import { motion } from "framer-motion";
+
 
 function Home() {
   return (
@@ -13,7 +14,7 @@ function Home() {
             viewport={{ once: true }}
             className=""
           >
-    <div className="flex flex-col-reverse md:flex-row items-center h-auto md:h-[40rem] md:bg-center md:bg-cover md:bg-[url('/src/assets/bgr-dev.jpg')] bg-[url('/src/assets/responsive_bg6.jpg')] bg-cover bg-center">
+    <div className="flex flex-col-reverse md:flex-row items-center h-auto md:h-[40rem] md:bg-center md:bg-cover md:bg-[url('/src/assets/bgr-dev.jpg')] bg-[url('/src/assets/responsive_bg8.jpg')] bg-cover bg-center">
       <div className="flex flex-col justify-center ml-4 md:ml-16 mr-4 md:mr-8 mb-12 md:mb-0">
         <h1 className="text-3xl md:text-4xl mb-4 font-heading pt-12 md:pt-24">Hello I AM</h1>
         <p className="text-3xl md:text-4xl font-extrabold mb-8 font-inter">
@@ -26,19 +27,24 @@ function Home() {
         </p>
         <div className="flex flex-col md:flex-row gap-4 mt-8">
           <Link
-            to="/projects"
-            className="hover:bg-white hover:border-white hover:text-black flex items-center border border-transparent bg-black pl-4 pr-4 h-10 rounded-full transition-colors duration-300 font-inter font-semibold w-36 md:w-auto"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={500}
+            className="hover:bg-white hover:border-white hover:text-black flex items-center border border-transparent bg-black pl-4 pr-4 h-10 rounded-full transition-colors duration-300 font-inter font-semibold w-36 md:w-auto cursor-pointer"
           >
             Contact Me
           </Link>
+
           <div className="flex flex-row gap-4">
             <div className="h-10 w-10 rounded-full flex items-center justify-center bg-black hover:bg-white hover:text-black transition-colors duration-300">
-              <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer">
-                <FaFacebookF />
-              </a>
+            <a href="https://www.facebook.com/gerardo.tango.56?locale=fr_FR" target="_blank" rel="noopener noreferrer">
+            <FaFacebookF />
+          </a>
             </div>
             <div className="h-10 w-10 rounded-full flex items-center justify-center bg-black hover:bg-white hover:text-black transition-colors duration-300">
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/gerardo-tango-8ab41028a/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedinIn />
               </a>
             </div>
@@ -48,7 +54,7 @@ function Home() {
               </a>
             </div>
             <div className="h-10 w-10 rounded-full flex items-center justify-center bg-black hover:bg-white hover:text-black transition-colors duration-300">
-              <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.whatsapp.com/Discussions/" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp />
               </a>
             </div>

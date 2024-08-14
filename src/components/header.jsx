@@ -1,5 +1,6 @@
 import { Link, animateScroll as scroll } from 'react-scroll';
 import { useState, useEffect } from 'react';
+import DownloadCV from './Downloadcv';
 
 function Header() {
   const [isSticky, setIsSticky] = useState(false);
@@ -35,7 +36,7 @@ function Header() {
             smooth={true}
             offset={-80}
             duration={500}
-            className="hover:text-gray-400 font-inter font-semibold"
+            className="hover:text-gray-400 font-inter font-semibold cursor-pointer"
           >
             About
           </Link>
@@ -45,7 +46,7 @@ function Header() {
             smooth={true}
             offset={-80}
             duration={500}
-            className="hover:text-gray-400 font-inter font-semibold"
+            className="hover:text-gray-400 font-inter font-semibold cursor-pointer"
           >
             Services
           </Link>
@@ -55,7 +56,7 @@ function Header() {
             smooth={true}
             offset={-80}
             duration={500}
-            className="hover:text-gray-400 font-inter font-semibold"
+            className="hover:text-gray-400 font-inter font-semibold cursor-pointer"
           >
             Projects
           </Link>
@@ -65,33 +66,14 @@ function Header() {
             smooth={true}
             offset={-80}
             duration={500}
-            className="hover:text-gray-400 font-inter font-semibold"
+            className="hover:text-gray-400 font-inter font-semibold cursor-pointer"
           >
             Contact
           </Link>
           </div>
-          <div className='lg:flex space-x-4 hidden'>
-        <Link
-          to="/#contact"
-          className="hover:bg-white hover:border-white hover:text-black flex items-center border border-white pl-4 pr-4 rounded-full transition-colors duration-300 font-inter font-semibold"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 mr-2"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-            />
-          </svg>
-          Download cv
-        </Link>
-        </div>
+          
+          <DownloadCV/>
+
         <button
           className="lg:hidden block text-3xl"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -148,27 +130,9 @@ function Header() {
           >
             Contact
           </Link>
-
-          <Link
-          to="/#contact"
-          className="hover:bg-white hover:border-white hover:text-black flex items-center border border-white pl-4 pr-4 rounded-full transition-colors duration-300 font-inter font-semibold"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 mr-2"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-            />
-          </svg>
-          Download cv
-        </Link>
+           
+           <DownloadCV/>
+          
         </div>
       )}
     </header>

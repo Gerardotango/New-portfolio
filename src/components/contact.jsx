@@ -88,7 +88,7 @@ const Contact = () => {
               </div>
               <div className="mb-4">
                 <p className="text-white font-bold mb-2"><FaMapMarkerAlt className="inline-block mr-2" /> Address:</p>
-                <p className="text-white">17 ubangi salongo lemba, kinshasa DRC</p>
+                <p className="text-white">salongo lemba, kinshasa DRC</p>
               </div>
             </div>
           </div>
