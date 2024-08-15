@@ -18,6 +18,26 @@ function Header() {
     };
   }, []);
 
+  const handleDownloadClick = async (event) => {
+    event.preventDefault(); // Empêche le comportement par défaut
+
+    try {
+      // Récupérer le fichier PDF
+      const response = await fetch('https://cdn2.cvdesignr.com/u/cv/pdf/64ca2dbc32d58_4dba140da750a066dece5ca13ffb63b9109d4903_02aa9.pdf');
+      const blob = await response.blob();
+
+      // Créer un lien de téléchargement temporaire
+      const link = document.createElement('a');
+      link.href = window.URL.createObjectURL(blob);
+      link.setAttribute('download', 'cv.pdf');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error('Erreur lors du téléchargement du fichier:', error);
+    }
+  };
+
   return (
     <header
       className={`bg-orange-800 py-6 px-4 sm:px-6 lg:px-8  fixed top-0 w-full transition-all duration-300 z-50 ${
@@ -71,8 +91,17 @@ function Header() {
             Contact
           </Link>
           </div>
-          
+
+          <div className='lg:flex space-x-4 hidden'>
+          <Link
+          to="/#contact"
+          className="hover:bg-white hover:border-white hover:text-black flex items-center border border-white pl-4 pr-4 rounded-full transition-colors duration-300 font-inter font-semibold cursor-pointer"
+          onClick={handleDownloadClick}
+        >
           <DownloadCV/>
+          Download cv
+        </Link>
+        </div>
 
         <button
           className="lg:hidden block text-3xl"
@@ -131,7 +160,14 @@ function Header() {
             Contact
           </Link>
            
-           <DownloadCV/>
+          <Link
+          to="/#contact"
+          className="flex flex-row hover:bg-white hover:border-white hover:text-black flex items-center border border-white pl-4 pr-4 rounded-full transition-colors duration-300 font-inter font-semibold"
+          onClick={handleDownloadClick}
+        >
+          <DownloadCV/>
+          Download cv
+        </Link>
           
         </div>
       )}
